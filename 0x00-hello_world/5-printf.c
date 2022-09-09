@@ -1,12 +1,11 @@
 #include <stdio.h>
-
+  
 /**
- *main - Use printf instead of puts
- *
- *Return: printf prints the long output
+ *main - Printf prints an output with values of variables
+ *Return: like \n, \d
  */
- int main(void)
+int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
-}	
+       printf("with proper grammar, but the outcome is a piece of art,\n");
+       return (0);
+}
