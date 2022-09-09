@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - This is a simple c program
- * return: It returns something
+ *main - This is a simple c program
+ *return: It returns something
  */
 int main(void)
 {
