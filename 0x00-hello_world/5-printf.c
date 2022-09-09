@@ -1,11 +1,12 @@
 #include <stdio.h>
-  
+
 /**
- *main - Printf prints an output with values of variables
- *Return: like \n, \d
- */
+*main -Prints the output using printf
+*Using escaoe characters
+*Return: And gives the out with return
+*/
 int main(void)
 {
-       printf("with proper grammar, but the outcome is a piece of art,\n");
-       return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
