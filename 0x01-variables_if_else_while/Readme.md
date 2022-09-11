@@ -1,0 +1,1 @@
+0. This program will affect a random number to the variable each time it's executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative. [source code here]
