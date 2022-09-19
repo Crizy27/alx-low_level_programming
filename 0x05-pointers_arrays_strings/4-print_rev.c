@@ -4,7 +4,7 @@
 
 /**
  *print_rev - prints a string in reverse order
- *@a: String to reverse
+ *@s: String to reverse
  *Return: Nothing
  */
 
