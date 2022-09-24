@@ -1,15 +1,16 @@
 #include <stdio.h>
 /**
- *main - print if the number is positive, zero, or negative
- *
+ *main - prints the alphabet in lowercase, and then in uppercase'
+ *followed by a new line
  *Description: using the main function
  *this program prints "programming is positive, zero, or negative
- *Return:
+ *Return: always 0 (Success)
  */
 int main(void)
 {
 	char ch;
-	for (ch = 'a'; ch <= 'z' ; ch)
+
+	for (ch = 'a'; ch <= 'z' ; ch++)
 	{
 		putchar(ch);
 	}
