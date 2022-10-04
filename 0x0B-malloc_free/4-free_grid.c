@@ -2,21 +2,17 @@
 #include <stdlib.h>
 
 /**
- * free_grid - this fanction concatenate two strings
- * @grid: 2 dimentional array to free
- * @height height
- *
+ * free_grid - function to free memory from grid
+ * @grid: grid to free
+ * @height: height of grid;
+ * Return: none
  */
+
 void free_grid(int **grid, int height)
 {
 	int i;
 
-	if (height <= 0)
-		return;
-
-	for (i = height; i >= 0; i--)
-	{
+	for (i = 0; i >= height; i++)
 		free(grid[i]);
-	}
 	free(grid);
 }
