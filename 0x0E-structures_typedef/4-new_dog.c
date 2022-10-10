@@ -1,44 +1,47 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
 
-int _strlen(char *str);
-char *_strcopy(char *dest, char *src);
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
-
 /**
- * _strlen - Finds the length of a string.
- * @str: The length to be measured.
+ * *_strcpy - this function return the legth of a string
  *
- * Return: The length of the string.
+ * @dest: where the source need to be copied
+ * @src: source of the string
+ *
+ * Return: Dest ponter
  */
-int _strlen(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
+	int length;
 
-	while (*str++)
-		len++;
-
-	return (len);
+	for (length = 0; src[length] != '\0'; length++)
+	{
+		dest[length] = src[length];
+	}
+		dest[length] = src[length];
+		return (dest);
 }
 
 /**
- * _strcopy - Copies a string pointed to by src, including the
- *	terminating null byte, to a buffer pointed to by dest.
- * @dest: The buffer storing the string copy.
- * @src: The source string.
+ * _strlen - this function return the legth of a string
  *
- * Return: The pointer to dest.
+ * @s: value
+ *
+ * Return: value
  */
-char *_strcopy(char *dest, char *src)
+int _strlen(char *s)
 {
-	int index = 0;
+	char n = 'a';
+	int i;
 
-	for (index = 0; src[index]; index++)
-		dest[index] = src[index];
-
-	dest[index] = '\0';
-
-	return (dest);
+	for (i = 0; (n != '\0'); i++)
+	{
+		n = s[i];
+	}
+	return (i - 1);
 }
 
 /**
@@ -75,9 +78,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	doggo->name = _strcopy(doggo->name, name);
+	doggo->name = _strcpy(doggo->name, name);
 	doggo->age = age;
-	doggo->owner = _strcopy(doggo->owner, owner);
+	doggo->owner = _strcpy(doggo->owner, owner);
 
 	return (doggo);
 }
